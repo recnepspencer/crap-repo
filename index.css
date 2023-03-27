@@ -1,0 +1,219 @@
+* {
+    font-family: 'lobster';
+    transition: all 0.15s;
+}
+input:focus {
+    outline: none;
+}
+
+body {
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+.clock {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+}
+.settings-pic {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    left: 5%;
+}
+.settings-pic:hover {
+    cursor: pointer;
+}
+.settings-pic:active {
+    opacity: 0.6;
+}
+.settings-form {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    left: 33%;
+    z-index: 101;
+    background-color: white;
+    margin-top: 19px;
+    box-shadow: inset 0px 2px 3px rgba(0,0,0,0.5);
+    padding: 10px 10px 10px 10px;
+    color: rgb(219, 54, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.settings-form div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.settings-form label, input {
+    margin-top: 10px;
+    font-size: 20px;
+}
+.settings-form input {
+    width: 30px;
+}
+.settings-form label{
+    margin-right: 5px;
+}
+.settings-form button {
+    background-color: white;
+    color:rgb(219, 54, 213);
+    border-radius: 3px;
+    border: solid 1px rgb(219, 54, 213);
+    font-size: 20px;
+    padding: 5px 8px 5px 8px;
+    margin: 5px;
+}
+.settings-form button:hover{
+    background-color: rgba(219,54,213,0.3);
+}
+.settings-form button:active{
+    background-color: rgb(219, 54, 213);
+    color: white;
+}
+.x{
+    border: solid 1px rgb(219, 54, 213);
+    display: inline-block;
+    padding: 1px 4px 1px 4px;
+    border-radius: 100%;
+}
+.make-gone {
+    color: transparent;
+    border: transparent;
+    background-color: transparent;
+}
+.set-alarm-time {
+    margin: 20px 20px 20px 20px;
+    padding: 10px 15px 10px 15px;
+    height: 40px;
+    width: 250px;
+    background-color: rgb(219, 54, 213);
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 100;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.69);
+    color: white;
+}
+.type-time {
+    width: 128px;
+    padding: 10px 5px 10px 5px;
+    height: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.input-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.inputer{
+    display: flex;
+    align-items: center;
+}
+.colon{
+    padding: none;
+    z-index: 100;
+    font-size: 30px;
+}
+#type-time{
+    box-shadow: -1px 0px 1px rgba(0,0,0,.15);
+    border-right: none;
+    margin-right: -5px;
+    padding-right: 8px;
+    border-radius: 5px 0px 0px 5px;
+    text-align: right;
+}
+#type-time2{
+    box-shadow: 1px 0px 1px rgba(0,0,0,.15);
+    border-left: none;
+    margin-left: -5px;
+    padding-left: 8px;
+    border-radius: 0px 5px 5px 0px;
+    text-align: left;
+}
+.current-time{
+    font-size: 25px;
+    border: 3px solid rgb(219, 54, 213);
+    padding: 10px 8px 10px 8px;
+    border-radius: 5px;
+    color: rgb(219, 54, 213);
+    margin-bottom: 20px;
+    text-align: center;
+    width: 200px;
+}
+.amOrPm {
+    margin: 10px 20px 20px 20px ;
+    width: 100%;
+    text-align: center;
+}
+.amOrPm #amLabel, #pmLabel{
+    color: gray;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+}
+.amLabel{
+    color: black !important;
+    border: 3px solid black;
+}
+.pmLabel{
+    color: black !important;
+    border: 3px solid black;
+}
+
+#am, 
+#pm{
+    background-color: none;
+    width: 0px;
+}
+.disabled {
+    background-color: transparent;
+    border: none;
+    color: transparent;
+}
+.stop, .snooze{
+    padding: 20px 15px 20px 15px;
+    width: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 5px 5px 5px;
+}
+.stop{
+    background-color: rgb(180, 25, 197);
+    color: white;
+}
+.snooze{
+    background-color: rgb(149, 11, 147);
+    color: white;
+}
+.stop:hover, .snooze:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.stop:active {
+    color: rgb(180, 25, 197);
+    border: 1px solid rgb(180, 25, 197);
+    background-color: white;
+}
+.snooze:active {
+    color:rgb(149, 11, 147);
+    border: 1px solid rgb(149, 11, 147);
+    background-color: white;
+}
