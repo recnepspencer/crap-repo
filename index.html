@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="clock">
+        <div class="settings">
+            <img role="button" class="settings-pic" id="settings-pic" src="/pics/img_67908-4178696952" >
+            <div id="add-settings">
+            </div>
+        </div>
+        <div>
+            <label class="set-alarm-time">
+                Set your alarm time:
+            </label>
+        </div>
+            <div class="input-box">
+                <div class="inputer">
+                    <input name="type-time" type="text" class="type-time" id="type-time">
+                    <div class="colon">:</div>
+                    <input class="type-time" id="type-time2">
+                </div>
+            </div>
+        <div class="amOrPm" id="amOrPm">
+            <label id="amLabel">AM</label>
+            <input name="amPm" type="radio" id="am">
+            <label id='pmLabel'>PM</label>
+            <input name="amPm" type="radio" id="pm">
+        </div>
+        <div id='current-time' class="current-time">
+        </div>
+        <div>
+            <button class="disabled" id="stop">Stop</button>
+            <button class="disabled" id="snooze">Snooze</button>
+        </div>      
+
+            
+                    
+                
+        
+
+       
+    </div>
+    <script src="/timer-countdown.js"></script>
+</body>
+</html>
